@@ -344,7 +344,7 @@ trait Ancillary {
     {      
         rsort($array);        
         $middle = (count($array) / 2);
-        $median = ($middle%2 != 0) ? $array{$middle-1} : (($array{$middle-1}) + $array{$middle}) / 2;
+        $median = ($middle%2 != 0) ? $array[$middle-1] : (($array[$middle-1]) + $array[$middle]) / 2;
         
         return $median;
     }
